@@ -15,8 +15,8 @@ class cat(Animal):
 rex = dog(4, 'black', 'Rex')
 felix = cat(4, 'ginger', 'Felix')
 
-print(f'Кот {felix.name}, цвет {felix.color}')
+print(f'Cat {felix.name}, color - {felix.color}')
 felix.catvoice()
 
-print(f'Собака {rex.name}, цвет {rex.color}, {rex.legs}-ногий друг')
+print(f'Dog {rex.name}, color - {rex.color}, {rex.legs}-legs friend')
 rex.dogvoice()
