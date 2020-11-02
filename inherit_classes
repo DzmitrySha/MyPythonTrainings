@@ -1,0 +1,22 @@
+class Animal:
+    def __init__(self, legs, color, name):
+        self.legs = legs
+        self.color = color
+        self.name = name
+
+class dog(Animal):
+    def dogvoice(self):
+        return print('woof! woof!')
+
+class cat(Animal):
+    def catvoice(self):
+        return print('Meaoooowww...')
+
+rex = dog(4, 'black', 'Rex')
+felix = cat(4, 'ginger', 'Felix')
+
+print(f'Кот {felix.name}, цвет {felix.color}')
+felix.catvoice()
+
+print(f'Собака {rex.name}, цвет {rex.color}, {rex.legs}-ногий друг')
+rex.dogvoice()
